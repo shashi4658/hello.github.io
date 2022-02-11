@@ -1,0 +1,281 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: black;
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+ 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.menu-ba{
+    background:black;
+    text-align: center;
+    
+}
+.menu-ba ul{
+    display: inline-flex;
+    list-style-type: none;
+    color: aliceblue ;
+}
+.menu-ba ul li{
+    width: 250px; 
+    margin: 6px;
+    padding: 4px;
+}
+.menu-ba ul li a{
+    text-decoration: none;
+    color: azure;
+}
+.active,.menu-ba ul li:hover{
+    background:green;
+    border-radius: 1px;
+    
+
+}
+.sub-menu-1{
+    display: none;
+    color: antiquewhite;
+}
+.menu-ba ul li:hover .sub-menu-1{
+    display: block;
+position: fixed;
+    background:black;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-ba ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 15px;
+}
+.menu-ba ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 8px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+
+}
+
+.menu-ba ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+.menu-ba ul li:hover .sub-menu-1 ul li a:hover{
+    color: gold ;
+}
+.sub-menu-2{
+    display: none;
+    
+}
+.hover-me:hover .sub-menu-2{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background: aqua;
+}
+p{
+    text-align: center;
+    /* background-image: url(bat.jpg); */
+    /* background-color: chocolate; */
+    margin: 1px;
+    padding: 10px;
+    color: black;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+main{
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.right{
+    border-radius: 30% 70% 30% /30% 30% 70% 70%;
+    background-color: aqua;
+}
+.right img{
+    max-width: 500px;
+    height: auto;
+
+}
+
+
+.left{
+    color: cornsilk;
+    text-transform: uppercase;
+
+}
+.left h3{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.left h1{
+    margin-top: 20px;
+    font-size: 70px;
+    margin-bottom: 25px;
+}
+.left h2{
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-size: 45px;
+}
+.left a{
+    text-decoration: none;
+    font-weight: 900;
+font-size: 14px;
+text-align: center;
+padding: 12px 25px;
+cursor: pointer;
+text-transform: uppercase;
+border-radius: 5px;
+display: inline-block;
+margin-right: 5px;
+color: blue;
+letter-spacing: 0;
+border: double 2px transparent;
+box-shadow: 0 10px 30px royalblue;
+}
+.left a:hover{
+    color: chartreuse;
+}
+.head h1{
+    text-transform: uppercase;
+    color:rgb(247, 157, 84);
+    font-size: 40px;
+    text-align: center;
+    /* margin: 5px */
+    background-color: black;
+    /* background-image: linear-gradient(blue to top,purple) */
+    /* padding-left: 100px; */
+    animation: aagepiche 2s linear infinite;
+animation-direction: alternate;
+/* border: 30px; */
+
+
+}
+@keyframes aagepiche{
+    from{padding-left: 30px;}
+    to {padding-right: 30px;}
+
+}
+h1{
+    color:red;
+}
+   .right img:hover{
+       animation: shake 0.10s;
+       animation-iteration-count: infinite;
+   } 
+   @keyframes shake {
+       0%{transform: translate(1px,1px) rotate(0deg);}
+       10%{transform: translate(-1px,-2px) rotate(-1deg);}
+       20%{transform: translate(-3px,0px)rotate(1deg);}
+       30%{transform: translate(3PX,2PX)rotate(0DEG);}
+       40%{transform: translate(1px,-1px)rotate(1deg);}
+       50%{transform: translate(-1px,2px)rotate(-1deg);}
+       
+   }
+   .pic img{
+       width: 400px;
+       height: auto;
+   }
+   .word h3{
+       color: aliceblue;
+       margin-top: 20px;
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       text-transform: uppercase;
+       font-size: 40px;
+
+   }
+   .word h1{
+       font-size: 70px;
+       font-family: 'Courier New', Courier, monospace;
+       color: goldenrod;
+       background: none;
+   }
+   .word h2{
+       color: aliceblue;
+       font-size: 45px;
+       font-family: Arial, Helvetica, sans-serif;
+
+   }
+   .loc h1{
+       text-transform: uppercase;
+       font-size: 20px;
+       text-align: center;
+       color: aquamarine;
+       background: none;
+   }
+   .locimg img{
+       width: 500px;
+       height: auto;
+
+   }
+   .word1 p{
+       font-size: 40px;
+       color: cornsilk;
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       text-transform: uppercase;
+       animation: none;
+       
+   }
+   .word1 h1{
+       background: none;
+       color: cornflowerblue;
+       font-size: 50px;
+animation: none;
+   }
+   .word1 h2{
+       font-size: 30px;
+       color: aquamarine;
+       text-transform: capitalize;
+   }
+   .word1 img{
+       width: 500px;
+   }
+  i{
+      color: coral;
+  }
+  input[type=text], input[type=password], textarea {  
+    width:45%;  
+    padding: 15px;  
+    margin: 5px 0 22px 0;  
+    display: inline-block;  
+    border: 1px solid gold;  
+    background: #f1f1f1;  
+    align-items: center;
+    justify-content: center;
+  }
+  input[type=text]:focus, input[type=password]:focus {  
+    background-color: grey;  
+    outline: none;  
+  }  
+  /* div {  
+    padding: 10px 0;  
+ }   */
+ hr {  
+    border: 1px solid brown;  
+    margin-bottom: 8px;  
+  }  
+  .registerbtn {  
+    background-color: #4CAF50;  
+    color: white;  
+    padding: 12px 20px;  
+    margin: 8px 0;  
+    border: 2px solid red;  
+    cursor: pointer;  
+    /* width: 50%;   */
+    opacity: 0.9;  
+  }  
+  .registerbtn:hover {  
+    opacity: 1;  
+  }
+  .container {  
+    padding: 50px;  
+  background-color: bisque;  
+}  
